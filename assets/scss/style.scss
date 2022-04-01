@@ -13,12 +13,15 @@
 
 
 /*=== components css start === */
-@import 'components/buttons';
+@import 'components/slider';
+@import 'components/banner';
+@import 'components/blog-list';
+@import 'components/modal';
 /*===// end of components css === */
 
 
 /*=== layouts css start === */
-@import 'layouts/navbar';
+@import 'layouts/header';
 @import 'layouts/footer';
 /*===// end of layouts css === */
 

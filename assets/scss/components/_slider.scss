@@ -1,0 +1,15 @@
+.slider {
+    height: 100vh;
+    overflow: hidden;
+
+    .swiper-slide {
+        background: $color-white;
+
+        .slider-content {
+            display: grid;
+            place-items: center;
+            height: 100%;
+        }
+    }
+
+}

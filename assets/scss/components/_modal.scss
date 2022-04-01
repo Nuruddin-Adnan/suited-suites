@@ -1,0 +1,22 @@
+.post-details {
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+    .post-details-content {
+        .post-heading {
+            padding: 2.5vh;
+            max-width: 85vh;
+            margin: auto;
+        }
+        .post-description {
+            overflow: auto;
+            height: 25vh;
+
+            p{
+                max-width: 85vh;
+                margin: auto;
+            }
+        }
+    }
+}
