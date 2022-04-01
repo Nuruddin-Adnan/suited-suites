@@ -1,0 +1,52 @@
+/*=== abstracts css start === */
+@font-face {
+  font-family: SuisseIntlMono-Regular;
+  src: url(../fonts/SuisseIntlMono-Regular.otf);
+}
+
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: SuisseIntlMono-Regular;
+  color: #000;
+}
+
+.container {
+  max-width: 80vw;
+  padding: 20vh 15px;
+}
+
+/*===// end of base css === */
+/*=== components css start === */
+/*===// end of components css === */
+/*=== layouts css start === */
+/*===// end of layouts css === */
+/*=== pages start === */
+/*===// end of pages  === */
+/*# sourceMappingURL=style.css.map */
