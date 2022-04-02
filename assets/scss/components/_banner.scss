@@ -1,16 +1,26 @@
 .banner {
     text-align: center;
-    max-width: 85vh;
-    width: 100%;
+    width: 37.5vw;
     margin: auto;
     padding: 15px;
 
+    @media (min-width: 576px) and (max-width: 1199px){
+      width: calc(100vw - 20vh);
+    }
+    @media (max-width: 575px){
+      width: calc(100vw - 10vh);
+    }
+
     .logo {
-        max-width: 400px;
+        max-height: 5vh;
     }
 
     p{
         padding: 35px 0 45px 0;
+
+        @media (max-width: 768px){
+          padding: 20px 0 25px 0;
+        }
     }
 
 

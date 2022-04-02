@@ -13,6 +13,8 @@
 </head>
 <body>
 
+
+ 
     
   <!-- === header section start === -->
   <header class="header">
@@ -28,7 +30,8 @@
     </div>
   </header>
   <!-- ===//end of header section === -->
- 
+
+
 
 
   <!-- === slider section start === -->
@@ -65,67 +68,55 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-2">
                   <p class="title">TO WHOM IT MAY CONCERN</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-3">
                   <p class="title">AN ODE TO GILLIS</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-4">
                   <p class="title">LE PLASTIQUE, C’EST FANTASTIQUE</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-5">
                   <p class="title">HIGHER BROTHERS</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-6">
                   <p class="title">JUST THE BURGER, HOLD THE FRIES</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-7">
                   <p class="title">ON THE LOOK OF THE COLLECTION</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-8">
                   <p class="title">I CAN DO THAT, HOLD MY</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-9">
                   <p class="title">MONA VESTIDA DE SEDA</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex justify-content-between">
-                  <p class="title">THE BRIGHT LIGHTS</p>
-                  <p class="timestamp">00/00/00</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="d-flex justify-content-between">
-                  <p class="title">MONA VESTIDA DE SEDA</p>
-                  <p class="timestamp">00/00/00</p>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="d-flex justify-content-between">
+                <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-10">
                   <p class="title">THE BRIGHT LIGHTS</p>
                   <p class="timestamp">00/00/00</p>
                 </a>
@@ -140,7 +131,7 @@
   
   
   <!-- ===//modal section === -->
-  <!-- Modal -->
+  <!-- post Modal start-->
   <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen modal-dialog-centered">
       <div class="modal-content">
@@ -159,13 +150,15 @@
             </div>
           </header>
           <!-- ===//end of header section === -->
-          
+
+          <!-- image on hover -->
+          <div class="bg"></div>
           
           <!-- === post-details section start === -->
           <div class="post-details">
             <div class="post-details-content">
               <div class="post-heading d-flex justify-content-between"> 
-                <p class="title">TO WHOM IT MAY CONCERN</p>
+                <p class="title">HELLO WORLD</p>
                 <p class="timestamp">00/00/00</p>
               </div>
               <div class="post-description">
@@ -174,9 +167,9 @@
                   bad. First and foremost, the whole reason for the existence of
                   flat pack goods was to cut costs. Even if, nowadays, different
                   companies will try to make you believe that its main purpose is
-                  ecological, which it is, the reason we <a href="#">this way</a> in.
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
                   <br> <br>
-                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#">colour</a>, which
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
                   it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
                 </p>
               </div>
@@ -195,7 +188,7 @@
                   </div>
                   <p class="ps-3">2022</p>
                 </div>
-                <a href="#" class="follow d-flex align-items-center">
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
                   <p class="pe-3">FOLLOW</p>
                   <div class="img flex-shrink-0">
                     <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
@@ -209,12 +202,721 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">TO WHOM IT MAY CONCERN</p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">AN ODE TO GILLIS</p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">LE PLASTIQUE, C’EST FANTASTIQUE</p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">HIGHER BROTHERS </p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">JUST THE BURGER, HOLD THE FRIES</p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">ON THE LOOK OF THE COLLECTION</p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">I CAN DO THAT, HOLD MY</p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">MONA VESTIDA DE SEDA</p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <!-- === header section start === -->
+          <header class="header">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="love-react">
+                  <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                </a>
+                <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                </a>
+              </div>
+            </div>
+          </header>
+          <!-- ===//end of header section === -->
+
+          <!-- image on hover -->
+          <div class="bg"></div>
+          
+          <!-- === post-details section start === -->
+          <div class="post-details">
+            <div class="post-details-content">
+              <div class="post-heading d-flex justify-content-between"> 
+                <p class="title">THE BRIGHT LIGHTS</p>
+                <p class="timestamp">00/00/00</p>
+              </div>
+              <div class="post-description">
+                <p>
+                  A product requiring self-assembly doesn’t automatically make it
+                  bad. First and foremost, the whole reason for the existence of
+                  flat pack goods was to cut costs. Even if, nowadays, different
+                  companies will try to make you believe that its main purpose is
+                  ecological, which it is, the reason we <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/freedom.jpg">this way</a> in.
+                  <br> <br>
+                  Bottom line is, it’s cheaper. Even if, nowadays, different companies will try to make you believe that its main <a href="#" data-bg="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/travel.jpg">colour</a>, which
+                  it is, that’s not the reason we do things this. Even if, nowadays, different companies will try to make you believe that even 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- ===//end of post-details section === -->
+
+
+          <!-- === footer section start === -->
+          <footer class="footer">
+            <div class="container-fluid p-0">
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="copyright d-flex align-items-center">
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                  </div>
+                  <p class="ps-3">2022</p>
+                </div>
+                <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
+                  <p class="pe-3">FOLLOW</p>
+                  <div class="img flex-shrink-0">
+                    <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </footer>
+          <!-- ===//end of footer section === -->
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- post Modal end -->
+
+
+
+  <!-- newsletter  Modal -->
+  <div class="modal fade" id="newsletter-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <form class="newsletter-form">
+            <!-- === header section start === -->
+            <header class="header">
+              <div class="container-fluid p-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <a href="#" class="love-react">
+                    <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
+                  </a>
+                  <a href="#" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/icon/cross.svg" alt="loveseat" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </header>
+            <!-- ===//end of header section === -->
+            
+            
+            <!-- === newsletter-details section start === -->
+            <div class="newsletter-details">
+              <div class="newsletter-details-content">
+                <div class="newsletter-form-content">
+                  <div class="newsletter-heading d-xl-flex d-none justify-content-between overflow-hidden"> 
+                    <p class="title">If you wish to follow the Development </p>
+                    <p class="timestamp text-nowrap bg-white overflow-hidden position-relative">Sign Up</p>
+                  </div>
+                  <div class="newsletter-input-box">
+                    <input type="email" id="newsletter-input" class="form-control" placeholder="Enter e-mail to follow the Dev
+                    " required>
+                  </div>
+                </div>
+                <div class="newsletter-success d-none">
+                  <div class="newsletter-heading d-flex justify-content-between overflow-hidden"> 
+                    <p class="title"><span class="d-lg-inline d-none">Thanks for Signing Up</span> <span class="d-lg-none d-inline">Thak you</span> </p>
+                    <p class="title-right text-nowrap bg-white overflow-hidden position-relative">I’ll keep you posted!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ===//end of newsletter-details section === -->
+
+
+            <!-- === footer section start === -->
+            <footer class="footer">
+              <div class="container-fluid p-0">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="copyright d-flex align-items-center">
+                    <div class="img flex-shrink-0">
+                      <img src="assets/images/icon/copyright.svg" alt="copyright" class="img-fluid">
+                    </div>
+                    <p class="ps-3">2022</p>
+                  </div>
+                  <button type="submit" class="follow d-flex align-items-center">
+                    <p class="pe-3">DONE</p>
+                    <div class="img flex-shrink-0">
+                      <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </footer>
+            <!-- ===//end of footer section === -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- ===//end of modal section === -->
   
   
- 
-  
-  
+
   
   
   
@@ -231,7 +933,7 @@
           </div>
           <p class="ps-3">2022</p>
         </div>
-        <a href="#" class="follow d-flex align-items-center">
+        <a href="#" class="follow d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#newsletter-modal">
           <p class="pe-3">FOLLOW</p>
           <div class="img flex-shrink-0">
             <img src="assets/images/icon/arrow-right.svg" alt="follow" class="img-fluid">

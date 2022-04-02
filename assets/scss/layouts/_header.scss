@@ -4,15 +4,20 @@
     left: 0;
     z-index: 1000;
     width: 100%;
-    padding: 15vh 15vh 0 15vh;
-    @media (min-width: 768px) and (max-width: 1199px){
-        padding: 10vh 10vh 0 10vh;
+    padding: calc(20vh - 5vh);
+    padding-bottom: 0;
+    @media (min-width: 576px) and (max-width: 1199px){
+        padding: calc(10vh - 20px);
+        padding-bottom: 0;
     }
-    @media (max-width: 767px){
-        padding: 5vh 5vh 0 5vh;
+    @media (max-width: 575px){
+        padding: 5vh;
+        padding-bottom: 0;
     }
 
     img {
-        width: 50px;
+        width: 5vh;
+        min-width: 40px;
     }
+
 }
