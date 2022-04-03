@@ -2,11 +2,12 @@ let swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     effect: 'fade',
     speed: 800,
-    mousewheel: {
-        enabled: true,
-        forceToAxis: true,
-        releaseOnEdges: true,
-    },
+    // mousewheel: {
+    //     enabled: true,
+    //     forceToAxis: true,
+    //     releaseOnEdges: true,
+    // },
+    mousewheel: true,
     mousewheelControl: true,
     slidesPerView: 1,
     noSwiping: true,
