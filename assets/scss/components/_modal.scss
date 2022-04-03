@@ -90,6 +90,7 @@
   .post-description a {
     position: relative;
     transition: all 0.2s;
+    white-space: nowrap;
   }
   
   .post-description a::before {

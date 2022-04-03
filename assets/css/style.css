@@ -371,6 +371,7 @@ body {
   position: relative;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  white-space: nowrap;
 }
 
 .post-description a::before {

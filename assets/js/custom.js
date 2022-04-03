@@ -1,17 +1,23 @@
-const swiper = new Swiper('.swiper-container', {
-
+let swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     effect: 'fade',
     speed: 800,
-    mousewheel: true,
+    mousewheel: {
+        enabled: true,
+        forceToAxis: true,
+        releaseOnEdges: true,
+    },
     mousewheelControl: true,
     slidesPerView: 1,
-    // freeMode: false,
-    // freeModeSticky: true,
+    noSwiping: true,
     navigation: {
         nextEl: ".swiper-button-next",
     },
 });
+
+
+
+
 
 // form submit 
 const form = document.querySelector('.newsletter-form');
@@ -44,7 +50,5 @@ for (const link of links) {
         link.addEventListener("mouseleave", () => {
           document.body.classList.remove(showClass);
         });
-    }
-
- 
+    } 
 }
