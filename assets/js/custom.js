@@ -1,13 +1,13 @@
+// swiper
 let swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     effect: 'fade',
     speed: 800,
-    // mousewheel: {
-    //     enabled: true,
-    //     forceToAxis: true,
-    //     releaseOnEdges: true,
-    // },
-    mousewheel: true,
+    mousewheel: {
+        enabled: true,
+        forceToAxis: true,
+        releaseOnEdges: true,
+    },
     mousewheelControl: true,
     slidesPerView: 1,
     noSwiping: true,
@@ -15,6 +15,7 @@ let swiper = new Swiper('.swiper-container', {
         nextEl: ".swiper-button-next",
     },
 });
+
 
 // swiper enable or disable on child scroll start
 {
@@ -27,9 +28,6 @@ let swiper = new Swiper('.swiper-container', {
     })
 }
 // swiper enable or disable on child scroll end
-
-
-
 
 
 // form submit 
