@@ -251,6 +251,11 @@ body {
   color: #fff;
 }
 
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
 .post-details {
   height: 100%;
   display: -ms-grid;

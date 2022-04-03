@@ -15,6 +15,18 @@ let swiper = new Swiper('.swiper-container', {
     },
 });
 
+// swiper enable or disable on child scroll start
+{
+    const element = document.querySelector('.blog-list ul');
+    element.addEventListener('mouseenter', function(){
+        swiper.disable();
+    })
+    element.addEventListener('mouseleave', function(){
+        swiper.enable();
+    })
+}
+// swiper enable or disable on child scroll end
+
 
 
 
@@ -51,4 +63,14 @@ for (const link of links) {
           document.body.classList.remove(showClass);
         });
     } 
+}
+
+
+// faceMove 
+function faceMove(event){
+    const element = document.querySelector('.smiley-face img')
+    const moveX = event.clientX;
+    const screenWith = screen.width;
+    const convertTo60Percentage = Math.round(((moveX / screenWith) * 100) / 1.66666666666666);
+    element.style.transform = `rotate(-${convertTo60Percentage}deg)`;
 }
