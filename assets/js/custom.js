@@ -1,7 +1,7 @@
 // swiper
 let swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
-    effect: 'fade',
+    // effect: 'fade',
     speed: 800,
     mousewheel: {
         enabled: true,
@@ -18,15 +18,15 @@ let swiper = new Swiper('.swiper-container', {
 
 
 // swiper enable or disable on child scroll start
-{
-    const element = document.querySelector('.blog-list ul');
-    element.addEventListener('mouseenter', function(){
-        swiper.disable();
-    })
-    element.addEventListener('mouseleave', function(){
-        swiper.enable();
-    })
-}
+// {
+//     const element = document.querySelector('.blog-list ul');
+//     element.addEventListener('mouseenter', function(){
+//         swiper.disable();
+//     })
+//     element.addEventListener('mouseleave', function(){
+//         swiper.enable();
+//     })
+// }
 // swiper enable or disable on child scroll end
 
 

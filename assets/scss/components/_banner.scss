@@ -2,25 +2,30 @@
     text-align: center;
     width: 37.5vw;
     margin: auto;
-    padding: 15px;
 
-    @media (min-width: 576px) and (max-width: 1199px){
+    @media (min-width: 768px) and (max-width: 1199px){
       width: calc(100vw - 20vh);
+    }
+    @media (min-width: 576px) and (max-width: 767px){
+      width: 50vw;
     }
     @media (max-width: 575px){
       width: calc(100vw - 10vh);
     }
 
     .logo {
-        max-height: 5vh;
+        height: 5vh;
+        @media (max-width: 767px){
+          height: 2.5vh;
+        }
     }
 
     p{
-        padding: 35px 0 45px 0;
-
-        @media (max-width: 768px){
-          padding: 20px 0 25px 0;
-        }
+      padding: 2.5vh 0 5vh 0;
+      @media (min-width: 576px) and (max-width: 767px){
+        font-size: 2.5vh;
+        line-height: 5vh;
+      }
     }
 
 
@@ -68,7 +73,7 @@
         position: static;
         display: inline-block;
         margin: 0;
-        width: 50px;
+        width: 5vh;
         color: $color-black;
         @include animation(bounce 2s infinite);
     }
