@@ -44,7 +44,6 @@ form.addEventListener('submit', function(e){
 
 // image show on hover
 const links = document.querySelectorAll(".post-description a");
-// const bg = document.querySelector(".bg");
 const bgAll = document.querySelectorAll(".bg");
 const showClass = "bg-show";
 

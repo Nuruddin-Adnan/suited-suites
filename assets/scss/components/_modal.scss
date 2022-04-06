@@ -88,13 +88,13 @@
     
 }
 
-  .post-description a {
+.post-description a {
     position: relative;
     transition: all 0.2s;
     white-space: nowrap;
-  }
-  
-  .post-description a::before {
+}
+
+.post-description a::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -107,9 +107,9 @@
     z-index: -1;
     transform-origin: 50%;
     background: $color-white;
-  }
-  
-  .bg {
+}
+
+.bg {
     top: 0;
     left: 0;
     right: 0;
@@ -119,24 +119,23 @@
     background-position: center;
     background-size: cover;
     transition: all 0.3s ease-out;
-  }
-  
-  .bg-show .bg {
+}
+
+.bg-show .bg {
     position: absolute;
     z-index: 1;
     opacity: 1;
-  }
-  
-  .bg-show a:hover {
+}
+
+.bg-show a:hover {
     z-index: 2;
     border-bottom-color: transparent;
     color: $color-green;
     text-decoration: none !important;
-  }
-  
-  .bg-show .post-description a:hover::before {
+}
+
+.bg-show .post-description a:hover::before {
     transform: translate(-50%, -50%) scaleX(1);
     transition: transform 0.2s 0.1s ease-out;
-  }
+}
 
-  
