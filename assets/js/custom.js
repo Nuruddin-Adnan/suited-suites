@@ -2,18 +2,9 @@
 let swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     grabCursor: true,
-    effect: 'fade',
-    fadeEffect: {
-        crossFade: false
-      },
-    // creativeEffect: {
-    //     prev: {
-    //         shadow: true,
-    //         translate: ["-20%", 0, -1],
-    //     },
-    //     next: {
-    //         translate: ["100%", 0, 0],
-    //     },
+    // effect: 'fade',
+    // fadeEffect: {
+    //     crossFade: false
     // },
     speed: 800,
     mousewheel: {
