@@ -1,7 +1,20 @@
 // swiper
 let swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
-    // effect: 'fade',
+    grabCursor: true,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: false
+      },
+    // creativeEffect: {
+    //     prev: {
+    //         shadow: true,
+    //         translate: ["-20%", 0, -1],
+    //     },
+    //     next: {
+    //         translate: ["100%", 0, 0],
+    //     },
+    // },
     speed: 800,
     mousewheel: {
         enabled: true,
@@ -71,4 +84,45 @@ function faceMove(event){
     const screenWith = screen.width;
     const convertTo60Percentage = Math.round(((moveX / screenWith) * 100) / 1.66666666666666);
     element.style.transform = `rotate(-${convertTo60Percentage}deg)`;
+}
+
+// scroll to snap 
+{
+    // Create a scroll Function at tablet and lower screen;
+    function scrollToSnap() {
+        const screenSize = window.matchMedia("(max-width: 1199px)");
+        if (screenSize.matches) {
+            const element = document.querySelector('.blog-list ul');
+            const listHeading = document.querySelector('.blog-list .heading');
+            const listHeadingTiele = listHeading.children[0];
+            const listHeadingDate = listHeading.children[1];
+
+            const firstListHeight = Math.round((element.children[0].getBoundingClientRect()).height);
+            element.children[0].style.marginTop = `-${firstListHeight}px`;
+
+            // first list content show on load
+            listHeadingTiele.innerHTML = element.children[0].children[0].children[0].innerHTML;
+            listHeadingDate.innerHTML = element.children[0].children[0].children[1].innerHTML;
+
+            // change on scroll
+            function scrollFunction(){
+                const listItems = element.children;
+                const elementTop = Math.round((element.getBoundingClientRect()).top);
+
+                [...listItems].forEach(listItem => {
+                    const listObj = listItem.getBoundingClientRect();
+                    const listTop = Math.round(listObj.top)
+                    const listHeight = Math.round(listObj.height)
+                    if(elementTop  > (listTop + listHeight)){
+                    listHeadingTiele.innerHTML = listItem.children[0].children[0].innerHTML;
+                    listHeadingDate.innerHTML = listItem.children[0].children[1].innerHTML;
+                    }
+                });
+            }
+            scrollFunction();
+        } 
+    }
+
+    // Call the match function at run time:
+    scrollToSnap();
 }
