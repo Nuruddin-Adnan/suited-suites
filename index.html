@@ -24,7 +24,8 @@
           <img src="assets/images/icon/love.svg" alt="loveseat" class="img-fluid">
         </a>
         <div class="smiley-face">
-          <img src="assets/images/icon/face.png" alt="smiley-face" class="img-fluid">
+          <img src="assets/images/icon/face.png" alt="smiley-face" class="img-fluid d-lg-inline d-none">
+          <img src="assets/images/icon/face-small-screen.png" alt="smiley-face" class="img-fluid face-small-screen d-lg-none d-inline">
         </div>
       </div>
     </div>
@@ -61,7 +62,7 @@
               <p>SUITE SUITES DEV BLOG</p>
               <p>TUESDAYS</p>
             </div>
-            <ul class="ps-0" onscroll="scrollToSnap()">
+            <ul class="ps-0" onscroll="scrollToSnap(); faceMove(event);">
               <li>
                 <a href="#" class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#modal-1">
                   <p class="title">HELLO WORLD</p>

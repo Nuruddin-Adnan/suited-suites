@@ -1,7 +1,6 @@
 // swiper
 let swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
-    grabCursor: true,
     // effect: 'fade',
     // fadeEffect: {
     //     crossFade: false
@@ -22,15 +21,15 @@ let swiper = new Swiper('.swiper-container', {
 
 
 // swiper enable or disable on child scroll start
-// {
-//     const element = document.querySelector('.blog-list ul');
-//     element.addEventListener('mouseenter', function(){
-//         swiper.disable();
-//     })
-//     element.addEventListener('mouseleave', function(){
-//         swiper.enable();
-//     })
-// }
+{
+    const element = document.querySelector('.blog-list ul');
+    element.addEventListener('mouseenter', function(){
+        swiper.disable();
+    })
+    element.addEventListener('mouseleave', function(){
+        swiper.enable();
+    })
+}
 // swiper enable or disable on child scroll end
 
 
@@ -70,11 +69,29 @@ for (const link of links) {
 
 // faceMove 
 function faceMove(event){
-    const element = document.querySelector('.smiley-face img')
-    const moveX = event.clientX;
-    const screenWith = screen.width;
-    const convertTo60Percentage = Math.round(((moveX / screenWith) * 100) / 1.66666666666666);
-    element.style.transform = `rotate(-${convertTo60Percentage}deg)`;
+    const screenSize = window.matchMedia("(max-width: 1199px)");
+
+    if (screenSize.matches) {
+        const face = document.querySelector('.smiley-face .face-small-screen');
+        const scrollElement = document.querySelector('.blog-list ul');
+        const scrollElementHeight = Math.round((scrollElement.getBoundingClientRect()).height);
+        const scrollTop = Math.round(scrollElement.scrollTop);
+        let convertToPercentage = Math.round(((scrollTop / scrollElementHeight) * 100));
+        let rotateValue;
+        if(convertToPercentage > 30){
+            rotateValue = 30;
+        }else {
+            rotateValue = convertToPercentage;
+        }
+        face.style.transform = `rotate(${rotateValue}deg)`;
+    }
+    else{
+        const element = document.querySelector('.smiley-face img')
+        const moveX = event.clientX;
+        const screenWith = screen.width;
+        const convertTo60Percentage = Math.round(((moveX / screenWith) * 100) / 1.66666666666666);
+        element.style.transform = `rotate(-${convertTo60Percentage}deg)`;
+    }
 }
 
 // scroll to snap 
