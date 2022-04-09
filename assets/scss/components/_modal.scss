@@ -2,6 +2,10 @@
     transform: translate(0);
 }
 
+.modal-body{
+    padding: 0;
+}
+
 .modal-backdrop{
     opacity:0 !important;
 }
@@ -13,15 +17,11 @@
 
     .post-details-content {
         width: 100%;
-        padding-left: calc(20vh - 2.5vh);
-        padding-right: calc(20vh - 2.5vh);
-        @media (min-width: 768px) and (max-width: 1199px){
-            padding-left: calc(10vh - 1.25vh);
-            padding-right: calc(10vh - 1.25vh);
-        }
-        @media (min-width: 576px) and (max-width: 767px){
-            padding-left: calc(10vh - 2.5vh);
-            padding-right: calc(10vh - 2.5vh);
+        padding-left: calc(20vh - 1px);
+        padding-right: calc(20vh - 1px);
+        @media (min-width: 576px) and (max-width: 1199px){
+            padding-left: calc(10vh - 1px);
+            padding-right: calc(10vh - 1px);
         }
         @media (max-width: 575px){
             padding-left: 0;
@@ -29,6 +29,7 @@
         }
 
         .post-heading {
+            position: relative;
             padding-bottom: 2.5vh;
             @media (min-width: 1200px){
                 padding: 0 5vh 2.5vh 5vh;
@@ -43,6 +44,20 @@
             }
             @media (max-width: 575px){
                 width: calc(100vw - 10vh);
+            }
+
+            @media(max-width: 1199px){
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background: $color-black;
+                    position: absolute;
+                    bottom: 2.5vh;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: all 1s linear;
+                }
             }
         }
         .post-description {
@@ -72,9 +87,6 @@
                 @media (min-width: 1200px){
                     padding: 0 5vh 0 5vh;
                 }
-                @media (max-width: 1199px){
-                    padding-right: 0.5vh;
-                }
 
                 a {
                     color: $color-green;
@@ -84,7 +96,7 @@
 
             /* width */
             &::-webkit-scrollbar {
-                width: 3px;
+                width: 1px;
             }
             
             /* Track */

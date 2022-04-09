@@ -102,14 +102,14 @@ function faceMove(event){
         if (screenSize.matches) {
             const element = document.querySelector('.blog-list ul');
             const listHeading = document.querySelector('.blog-list .heading');
-            const listHeadingTiele = listHeading.children[0];
+            const listHeadingTitle = listHeading.children[0];
             const listHeadingDate = listHeading.children[1];
 
             const firstListHeight = Math.round((element.children[0].getBoundingClientRect()).height);
             element.children[0].style.marginTop = `-${firstListHeight}px`;
 
             // first list content show on load
-            listHeadingTiele.innerHTML = element.children[0].children[0].children[0].innerHTML;
+            listHeadingTitle.innerHTML = element.children[0].children[0].children[0].innerHTML;
             listHeadingDate.innerHTML = element.children[0].children[0].children[1].innerHTML;
 
             // change on scroll
@@ -121,16 +121,22 @@ function faceMove(event){
                     const listObj = listItem.getBoundingClientRect();
                     const listTop = Math.round(listObj.top)
                     const listHeight = Math.round(listObj.height)
+
                     if(elementTop  > (listTop + listHeight)){
-                    listHeadingTiele.innerHTML = listItem.children[0].children[0].innerHTML;
-                    listHeadingDate.innerHTML = listItem.children[0].children[1].innerHTML;
+                        listHeadingTitle.innerHTML = listItem.children[0].children[0].innerHTML;
+                        listHeadingDate.innerHTML = listItem.children[0].children[1].innerHTML;
+
+                        // listHeadingTitle.classList.add('snap-animation');
+                        // setTimeout(() => {
+                        //     listHeadingTitle.classList.remove('snap-animation')
+                        // }, 200)
                     }
+
                 });
             }
             scrollFunction();
         } 
     }
-
     // Call the match function at run time:
     scrollToSnap();
 }

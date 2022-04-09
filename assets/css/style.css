@@ -160,21 +160,14 @@ body {
 
 .blog-list {
   width: 100%;
-  padding-left: calc(20vh - 2.5vh);
-  padding-right: calc(20vh - 2.5vh);
+  padding-left: calc(20vh - 1px);
+  padding-right: calc(20vh - 1px);
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 576px) and (max-width: 1199px) {
   .blog-list {
-    padding-left: calc(10vh - 1.25vh);
-    padding-right: calc(10vh - 1.25vh);
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .blog-list {
-    padding-left: calc(10vh - 2.5vh);
-    padding-right: calc(10vh - 2.5vh);
+    padding-left: calc(10vh - 1px);
+    padding-right: calc(10vh - 1px);
   }
 }
 
@@ -186,9 +179,11 @@ body {
 }
 
 .blog-list .heading {
+  position: relative;
   padding-bottom: 2.5vh;
   margin: 0 auto;
   width: 37.5vw;
+  /* The animation code */
 }
 
 @media (min-width: 1200px) {
@@ -219,6 +214,53 @@ body {
   color: #000;
 }
 
+@media (max-width: 1199px) {
+  .blog-list .heading::before {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 2.5vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+  }
+}
+
+.blog-list .heading .snap-animation {
+  -webkit-animation-name: snap-to;
+          animation-name: snap-to;
+  -webkit-animation-duration: .2s;
+          animation-duration: .2s;
+}
+
+@-webkit-keyframes snap-to {
+  0% {
+    -webkit-transform: translateY(2.5vh);
+            transform: translateY(2.5vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes snap-to {
+  0% {
+    -webkit-transform: translateY(2.5vh);
+            transform: translateY(2.5vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .blog-list ul {
   overflow: auto;
   height: 25vh;
@@ -234,7 +276,7 @@ body {
 }
 
 .blog-list ul::-webkit-scrollbar {
-  width: 3px;
+  width: 1px;
 }
 
 .blog-list ul::-webkit-scrollbar-track {
@@ -287,9 +329,18 @@ body {
   color: #fff;
 }
 
+.swiper-slide-active .blog-list .heading::before {
+  width: 100%;
+  opacity: 1;
+}
+
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0);
           transform: translate(0);
+}
+
+.modal-body {
+  padding: 0;
 }
 
 .modal-backdrop {
@@ -305,21 +356,14 @@ body {
 
 .post-details .post-details-content {
   width: 100%;
-  padding-left: calc(20vh - 2.5vh);
-  padding-right: calc(20vh - 2.5vh);
+  padding-left: calc(20vh - 1px);
+  padding-right: calc(20vh - 1px);
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 576px) and (max-width: 1199px) {
   .post-details .post-details-content {
-    padding-left: calc(10vh - 1.25vh);
-    padding-right: calc(10vh - 1.25vh);
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  .post-details .post-details-content {
-    padding-left: calc(10vh - 2.5vh);
-    padding-right: calc(10vh - 2.5vh);
+    padding-left: calc(10vh - 1px);
+    padding-right: calc(10vh - 1px);
   }
 }
 
@@ -331,6 +375,7 @@ body {
 }
 
 .post-details .post-details-content .post-heading {
+  position: relative;
   padding-bottom: 2.5vh;
   margin: 0 auto;
   width: 37.5vw;
@@ -357,6 +402,22 @@ body {
 @media (max-width: 575px) {
   .post-details .post-details-content .post-heading {
     width: calc(100vw - 10vh);
+  }
+}
+
+@media (max-width: 1199px) {
+  .post-details .post-details-content .post-heading::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 2.5vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
   }
 }
 
@@ -410,19 +471,13 @@ body {
   }
 }
 
-@media (max-width: 1199px) {
-  .post-details .post-details-content .post-description p {
-    padding-right: 0.5vh;
-  }
-}
-
 .post-details .post-details-content .post-description p a {
   color: #01a342;
   text-decoration: underline;
 }
 
 .post-details .post-details-content .post-description::-webkit-scrollbar {
-  width: 3px;
+  width: 1px;
 }
 
 .post-details .post-details-content .post-description::-webkit-scrollbar-track {
