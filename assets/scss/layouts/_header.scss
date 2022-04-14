@@ -11,11 +11,7 @@
         width: 5vh;
     }
 
-    @media (min-width: 768px) and (max-width: 1199px){
-        padding: calc(10vh - 1.25vh);
-        padding-bottom: 0;
-    }
-    @media (min-width: 576px) and (max-width: 767px){
+    @media (min-width: 576px) and (max-width: 1199px){
         padding: calc(10vh - 2.5vh);
         padding-bottom: 0;
     }

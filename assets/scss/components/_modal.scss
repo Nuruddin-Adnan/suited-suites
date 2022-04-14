@@ -19,11 +19,11 @@
 
     .post-details-content {
         width: 100%;
-        padding-left: calc(20vh - 1px);
-        padding-right: calc(20vh - 1px);
+        padding-left: calc(20vh - 0.4vh);
+        padding-right: calc(20vh - 0.4vh);
         @media (min-width: 576px) and (max-width: 1199px){
-            padding-left: calc(10vh - 1px);
-            padding-right: calc(10vh - 1px);
+            padding-left: calc(10vh - 0.4vh);
+            padding-right: calc(10vh - 0.4vh);
         }
         @media (max-width: 575px){
             padding-left: 0;
@@ -98,7 +98,7 @@
 
             /* width */
             &::-webkit-scrollbar {
-                width: 1px;
+                width: 0.4vh;
             }
             
             /* Track */
