@@ -24,7 +24,14 @@ let swiper = new Swiper('.swiper-container', {
 {
     const element = document.querySelector('.blog-list ul');
     element.addEventListener('mouseenter', function(){
-        swiper.disable();
+        element.addEventListener('scroll', function(){
+            if(this.scrollTop !== 0){
+                swiper.disable();
+            }
+            else {
+                swiper.enable();
+            }
+        })
     })
     element.addEventListener('mouseleave', function(){
         swiper.enable();
